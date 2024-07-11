@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+header{
+   padding:  4px;
+   margin-right: 40px;
+}
+header ul{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+header ul li {
+    margin-left: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.content .l-content{
+    margin-left: 148px; 
+    text-align: center;
+}
+.content .l-content h2{
+    width: 506px;
+    height: 105px;
+    font-size: 44px;
+}
+.content .l-content p{
+    width: 497px;
+    
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+button{
+    width: 167px;
+    height: 30px;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color:  rgba(255, 153, 0, 0.608);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.content .r-content{
+    margin-right: 220px;
+}
+.content .r-content img{
+    width: 243px;
+    height: 243px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.parcour{
+    padding: 30px 150px;
+}
+ h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+ p{
+    font-size: 16px;
+    font-weight: 400;
+}   
+.competence-interet{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 150px;
+    background-color: rgba(237, 247, 250, 1)    ;
+}   
+.competence-interet .competence h6{
+    text-align: left;
+}
+.competence-interet .competence ul{
+    width: 418px;
+    height: 250px;
+    margin-left: 4px;
+    margin-top: 5px;
+    background-color: white;
+    list-style: none;
+    border: 2px solid rgb(3, 196, 255);
+    border-radius: 4px;
+}
+.competence-interet .competence ul li{
+    margin: 5px 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.competence-interet .interet h6{
+    text-align: right;
+    color: rgba(0, 168, 204, 1);
+}
+.competence-interet .interet ul{
+    width: 418px;
+    height: 250px;
+    margin-right: 4px;
+    margin-top: 5px;
+    background-color: white;
+    list-style: none;
+    border: 2px solid rgb(3, 196, 255);
+    border-radius: 4px;         
+}
+.competence-interet .interet ul li{
+    margin: 5px 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact{
+    width: 600px;
+    padding: 30px 150px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+footer{
+    padding: 30px 150px;
+    text-align: center;
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+.icon img{
+    margin: 10px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .content .l-content, 
+    .content .r-content {
+        margin: 0;
+        width: 90%;
+    }
+    .parcour, .competence-interet, .contact, footer {
+        padding: 20px;
+    }
+    .competence-interet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .competence-interet .competence, 
+    .competence-interet .interet {
+        width: 100%;
+    }
+}
